@@ -1,0 +1,110 @@
+.about__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skills__columns {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.skills__column {
+  flex: 1;
+  min-width: 150px;
+}
+
+.skills__bar {
+  margin-bottom: 1rem;
+}
+
+.skills__bar span {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.bar {
+  background-color: #ddd;
+  height: 8px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 6px;
+  background-color: #007bff;
+}
+
+/* Customize skill colors */
+.js { background-color: #f0db4f; }
+.react { background-color: #61dafb; }
+.node { background-color: #68a063; }
+.mongo { background-color: #4db33d; }
+.tailwind { background-color: #38bdf8; }
+.docker { background-color: #2496ed; }
+.k8s { background-color: #326ce5; }
+
+.about__ok {
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+
+.about__boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.about__box {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: #2e2d2d;
+  padding: 1.2rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about__box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.about__icon {
+  font-size: 2.2rem;
+  color: #007acc;
+  flex-shrink: 0;
+}
+
+.about__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.about__subtitle {
+  font-size: 0.95rem;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.about__github-link {
+  font-size: 1.2rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.about__github-link:hover {
+  color: #000;
+}
